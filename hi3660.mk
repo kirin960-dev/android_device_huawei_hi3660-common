@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-$(call inherit-product, vendor/huawei/kirin970-common/kirin970-common-vendor.mk)
+$(call inherit-product, vendor/huawei/hi3660-common/hi3660-common-vendor.mk)
 
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
@@ -38,7 +38,7 @@ PRODUCT_PACKAGES += \
 
 # Device init scripts
 PRODUCT_PACKAGES += \
-    init.kirin970.rc
+    init.hi3660.rc
 
 # Display
 PRODUCT_PACKAGES += \
@@ -50,7 +50,7 @@ PRODUCT_COPY_FILES += \
 
 # LineageHw
 PRODUCT_PACKAGES += \
-    lineage.touch@1.0-service.kirin970
+    lineage.touch@1.0-service.hi3660
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -65,7 +65,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:system/etc/permissions/android.hardware.fingerprint.xml \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:system/etc/permissions/android.hardware.telephony.gsm.xml \
-    $(LOCAL_PATH)/permissions/privapp-permissions_kirin970.xml:system/etc/permissions/privapp-permissions_kirin970.xml
+    $(LOCAL_PATH)/permissions/privapp-permissions_hi3660.xml:system/etc/permissions/privapp-permissions_hi3660.xml
 
 # Radio
 PRODUCT_PACKAGES += \
